@@ -1,1 +1,149 @@
-# Signup-page
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>create an account</title>
+    <style>
+      body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgba(197, 104, 119, 0.678);
+        margin: 0;
+      
+       
+      }
+      .whole-container{
+        width: 400px;
+        padding: 40px;
+        box-shadow:  0 4px 15px rgba(0,0,0,0.2);
+        border-radius: 10px;
+        background-color: white;
+      }
+      .signin{
+        font-size: 20px;
+        font-weight: bold;
+       text-align: center;
+      }
+      .first-v{
+       
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       gap: 6px;
+      }
+      .newhere{
+        color: rgb(96 96 96);
+        margin-right: 10px;
+      }
+      .createA{
+        color: blue;   
+      }
+      .email,
+      .password{
+        font-size: 15px; 
+      }
+      .emailbox,
+      .passwordbox{
+        width: 100%;
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+      }
+      .second-v{
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      margin-top: 10px;
+      }
+
+      .signin-b{
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: blue;
+        color: white;
+        font-weight: 600; 
+        cursor: pointer;
+      }
+      .signin-b:hover {
+        background-color: darkblue;
+      }
+      .signin-g,
+      .signin-a{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        gap:8px;
+        width: 100%;
+        padding: 8px;
+        box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        margin-top: 15px;
+        border: none;
+        background-color: #f2f2f2; 
+        cursor: pointer;
+      }
+      .signin-g:hover, .signin-a:hover {
+        background-color: #e6e6e6;
+      }
+      .g-logo,
+      .a-logo{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+      }
+      @media(max-width:480px){
+       .whole-container{
+        width: 90%;
+        padding: 25px;
+        }
+      }
+     
+    </style>
+  </head>
+  <body>
+        <div class="whole-container">
+          <p class="signin"> Sign In</p>
+        <div class="first-v">
+          <p class="newhere"> New here?</p>
+          <p ><a class="createA" href="">Create an account</a></p>
+        </div>
+
+        <div>
+          <p class="email">Email</p>
+          <input class="emailbox" type="email" placeholder="Enter your email">
+        </div>
+        <div>
+          <p class="password">Password</p>
+          <input class="passwordbox"type="password" placeholder="Enter your password">
+        </div>
+
+        <div class="second-v">
+          <label><input type="checkbox"> Remember me?</label>
+          <a>Forgot password?</a>
+        </div>
+
+        
+            <button class="signin-b">Sign In</button>
+
+            <p  style="text-align: center; font-size: 15px; font-weight: 400;"
+            >--------------------Or continue with--------------------
+            </p>
+
+        <button class="signin-g">
+          <img class="g-logo" src="thumbnail/download.png" alt="google logo">
+        <span>Sign in with Google</span> 
+        </button>
+
+        <button class="signin-a">
+          <img class="a-logo" src="thumbnail/apple.png" alt="apple logo">
+          <span>Sign in with Apple</span>
+        </button>
+
+    </div>
+  </body>
+</html>
